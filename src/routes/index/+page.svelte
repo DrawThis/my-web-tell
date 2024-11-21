@@ -2,6 +2,7 @@
     // Importaciones CSS
 
     import '$lib/css/index.css';
+    import '$lib/css/nose.css';
     import '$lib/css/todo.css';
     import '$lib/animate/animate.min.css';
     import '$lib/lightbox/css/lightbox.min.css';
@@ -14,6 +15,10 @@
 
 
 </script>
+
+<style>
+
+</style>
 
 <svelte:head>
     <meta charset="utf-8" />
