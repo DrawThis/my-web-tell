@@ -1,5 +1,4 @@
 <script>
-    import '$lib/css/style.css';
     import '$lib/css/todo.css';
     import '$lib/animate/animate.min.css';
     import '$lib/lightbox/css/lightbox.min.css';
