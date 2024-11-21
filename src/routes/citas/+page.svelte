@@ -1,5 +1,5 @@
 <script>
-    import '$lib/css/style.css';
+    import '$lib/css/index.css';
     import '$lib/css/todo.css';
     import '$lib/animate/animate.min.css';
     import '$lib/lightbox/css/lightbox.min.css';
@@ -46,14 +46,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <div class="navbar-nav ms-auto py-0">
-        <a href="/index/" class="nav-item nav-link active">Inicio</a>
-        <a href="/sobrenosotros/" class="nav-item nav-link">Sobre Nosotros</a>
+        <a href="/index" class="nav-item nav-link active">Inicio</a>
+        <a href="/sobrenosotros" class="nav-item nav-link">Sobre Nosotros</a>
         <div class="nav-item dropdown">
           <a href="1" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
           <div class="dropdown-menu m-0">
-            <a href="/citas/" class="dropdown-item active">Apoyo Psicológico</a>
-            <a href="/estrategias/" class="dropdown-item">Estrategias de Manejo del Estrés</a>
-            <a href="/Tecnicasderelajacion/" class="dropdown-item">Técnicas de Relajación</a>
+            <a href="/citas" class="dropdown-item active">Apoyo Psicológico</a>
+            <a href="/estrategias" class="dropdown-item">Estrategias de Manejo del Estrés</a>
+            <a href="/Tecnicasderelajacion" class="dropdown-item">Técnicas de Relajación</a>
           </div>
         </div>
         <a href="/contacto/" class="nav-item nav-link active">¡Contáctanos!</a>

@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
 
 
-  import '$lib/css/style.css';
+  import '$lib/css/index.css';
   import '$lib/css/todo.css';
   import '$lib/animate/animate.min.css';
   import '$lib/animate/animate.css'
