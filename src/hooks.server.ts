@@ -17,7 +17,7 @@ export const handle = async ({ event, resolve }) => {
     if (!user || user.length === 0) {
         // if the session is invalid, remove the cookie and load page as normal
         event.cookies.set('session', '', {
-            path: '/iniciarsesion',
+            path: '/',
             expires: new Date(0),
           }
         )
