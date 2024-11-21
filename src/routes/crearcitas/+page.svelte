@@ -91,53 +91,60 @@
                     <h4>Solicitar Cita Psicológica</h4>
                 </div>
                 <div class="card-body">
-                    <form>
-                        <div class="mb-3">
-                            <label class="form-label">Fecha de la Cita</label>
-                            <input type="date" class="form-control" required>
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label class="form-label">Horario Preferido</label>
-                            <select class="form-select" required>
-                                <option value="">Selecciona un horario</option>
-                                <option value="manana">Mañana (8:00 am - 9:00 am)</option>
-                                <option value="tarde">Mañana (9:00 am - 10:00 am)</option>
-                                <option value="tarde">Mañana (10:00 am - 11:00 am)</option>
-                                <option value="tarde">Mañana (11:00 am - 12:00 pm)</option>
-                                <option value="tarde">Tarde (2:00 pm - 3:00 pm)</option>
-                                <option value="tarde">Tarde (3:00 pm - 4:00 pm)</option>
-                                <option value="tarde">Tarde (4:00 pm - 5:00 pm)</option>
+                    <form action="?/crear" method="POST">
+                      <div class="mb-3">
+                        <label for="username" class="form-label">Nombre del Usuario</label>
+                        <input type="text" name="usuario" class="form-control" required>
+                      </div>
 
-                            </select>
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label class="form-label">Grupo de Atención</label>
-                            <select class="form-select" required>
-                                <option value="">Selecciona un Grado</option>
-                                <option value="adolescentes">7</option>
-                                <option value="adultos">8</option>
-                                <option value="parejas">9</option>
-                                <option value="tercera_edad">10</option>
-                                <option value="tercera_edad">11</option>
-                            </select>
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label class="form-label">Jornada de estudio</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="jornada" value="presencial" required>
-                                <label class="form-check-label">mañana</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="jornada" value="virtual" required>
-                                <label class="form-check-label">tarde</label>
-                            </div>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary w-100">Solicitar Cita</button>
-                    </form>
+                      <div class="mb-3">
+                        <label for="username" class="form-label">Correo Electrónico</label>
+                        <input type="email" name="correo" class="form-control" required>
+                      </div>
+                    
+                      <div class="mb-3">
+                          <label for="fecha" class="form-label">Fecha de la Cita</label>
+                          <input type="date" name="fecha" class="form-control" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="horario" class="form-label">Horario Preferido</label>
+                          <select name="horario" class="form-select" required>
+                              <option value="">Selecciona un horario</option>
+                              <option value="8:00 am - 9:00 am">Mañana (8:00 am - 9:00 am)</option>
+                              <option value="9:00 am - 10:00 am">Mañana (9:00 am - 10:00 am)</option>
+                              <option value="10:00 am - 11:00 am">Mañana (10:00 am - 11:00 am)</option>
+                              <option value="11:00 am - 12:00 pm">Mañana (11:00 am - 12:00 pm)</option>
+                              <option value="2:00 pm - 3:00 pm">Tarde (2:00 pm - 3:00 pm)</option>
+                              <option value="3:00 pm - 4:00 pm">Tarde (3:00 pm - 4:00 pm)</option>
+                              <option value="4:00 pm - 5:00 pm">Tarde (4:00 pm - 5:00 pm)</option>
+
+                          </select>
+                      </div>
+                      <div class="mb-3">
+                          <label for="grupo" class="form-label">Grupo de Atención</label>
+                          <select name="grupo" class="form-select" required>
+                              <option value="">Selecciona un Grado</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                          </select>
+                      </div>
+                      <div class="mb-3">
+                          <label for="" class="form-label">Jornada de estudio</label>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="jornada" value="mañana" required>
+                              <label for="" class="form-check-label">Mañana</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="jornada" value="tarde" required>
+                              <label for="" class="form-check-label">Tarde</label>
+                          </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary w-100">Solicitar Cita</button>
+                  </form>
+                  
                 </div>
             </div>
         </div>

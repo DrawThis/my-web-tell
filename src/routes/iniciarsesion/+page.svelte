@@ -203,50 +203,49 @@
   </div>
 
   <div class="contenedor__login-register">
-    <form on:submit={validateLoginForm} class="formulario__login">
+    <form action="?/login" method="POST" class="formulario__login" >
       <h2>Iniciar Sesión</h2>
       <input 
         type="email" 
+        name="email"
         placeholder="Correo Electrónico" 
         bind:value={loginEmail}
         required
       />
       <input 
         type="password" 
+        name="password"
         placeholder="Contraseña" 
         bind:value={loginPassword}
+        min="6"
         required
       />
       <button type="submit">Entrar</button>
     </form>
 
-    <form on:submit={validateRegisterForm} class="formulario__register">
+    <form action="?/register" method="POST" class="formulario__register" >
       <h2>Regístrarse</h2>
       <input 
         type="text" 
-        name="nombre"
+        name="username"
         placeholder="Nombre completo" 
         bind:value={registerName}
         required
       />
       <input 
-        type="email" 
+        type="email"
+        name="email" 
         placeholder="Correo Electrónico" 
         bind:value={registerEmail}
         required
       />
       <input 
-        type="text" 
-        name="username"
-        placeholder="Usuario" 
-        bind:value={registerUsername}
-        required
-      />
-      <input 
         type="password" 
+        name="password"
         placeholder="Contraseña" 
         bind:value={registerPassword}
         required
+        min="6"
       />
       <button type="submit">Regístrarse</button>
     </form>
