@@ -3,6 +3,9 @@
 
     import '$lib/css/index.css';
     import '$lib/css/todo.css';
+    import '$lib/css/nose.css';
+    import '$lib/css/importan.css';
+    import '$lib/css/buenansas.css';
     import '$lib/animate/animate.min.css';
     import '$lib/lightbox/css/lightbox.min.css';
 
